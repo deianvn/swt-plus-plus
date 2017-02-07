@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.6)
 project(swt-plus-plus-win32)
 set(CMAKE_CXX_STANDARD 14)
 
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 set(PROJECT_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
