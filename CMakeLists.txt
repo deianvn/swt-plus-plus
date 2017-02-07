@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 3.5.1)
 project(swt_plus_plus)
 set(CMAKE_CXX_STANDARD 14)
 
@@ -7,7 +7,7 @@ if (WIN32)
 endif (WIN32)
 
 if (UNIX)
-    add_subdirectory(gtk)
+    add_subdirectory(gtkmm)
 endif (UNIX)
 
 if (APPLE)

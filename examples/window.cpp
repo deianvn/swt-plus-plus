@@ -2,9 +2,9 @@
 
 using namespace swt;
 
-int main()
+int main(int argc, char *argv[])
 {
-    Display display;
+    Display display {};
     Shell shell { &display };
     shell.show();
     return display.readAndDispatch();

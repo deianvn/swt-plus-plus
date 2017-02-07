@@ -3,22 +3,36 @@
 
 #include "../graphics/Device.hpp"
 
+#include <gtkmm.h>
 #include <vector>
-
-class Shell;
 
 namespace swt
 {
+    class Shell;
+
     class Display : public Device {
     public:
+        Display()
+        {
+            app = Gtk::Application::create();
+        }
+
         int readAndDispatch();
-        const std::vector<Shell>& getShells();
+        const std::vector<Shell*>& getShells();
         Shell* getCurrentShell();
         void setCurrentShell(Shell* shell);
         void addShell(Shell* shell);
+
+        void setGtkmmWindow(Gtk::Window& window)
+        {
+            gtkmmWindow = &window;
+        }
     private:
-        std::std::vector<Shell> shells {};
+        std::vector<Shell*> shells {};
         Shell* currentShell { nullptr };
+
+        Glib::RefPtr<Gtk::Application> app;
+        Gtk::Window* gtkmmWindow;
     };
 }
 
