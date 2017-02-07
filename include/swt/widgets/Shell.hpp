@@ -4,8 +4,6 @@
 #include "Display.hpp"
 #include "Widget.hpp"
 
-#include <windows.h>
-
 namespace swt
 {
     class Shell : public Widget
@@ -16,12 +14,6 @@ namespace swt
         void show();
         void setVisible(bool visible);
         Display* getDisplay() const override;
-    private:
-        Display* display;
-        HWND hWnd;
-        STARTUPINFO startupInfo;
-
-        void createWindow();
     };
 }
 
