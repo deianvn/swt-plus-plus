@@ -11,7 +11,7 @@ if (UNIX)
 endif (UNIX)
 
 if (APPLE)
-    add_subdirectory(carbon)
+    add_subdirectory(cocoa)
 endif (APPLE)
 
 add_subdirectory(examples)
