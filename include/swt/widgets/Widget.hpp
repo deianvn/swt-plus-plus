@@ -8,11 +8,14 @@ namespace swt
     class Widget
     {
     public:
-        Widget(const Display& display) : display(display) {}
+        Widget() = default;
+        Widget(Widget* parent) : parent(parent) {}
         virtual ~Widget() {}
-        Display& getDisplay();
+        Widget* getParent() const;
+        virtual Display* getDisplay() const;
+        int getStyle() const;
     private:
-        const Display& display;
+        Widget* parent { nullptr };
     };
 }
 

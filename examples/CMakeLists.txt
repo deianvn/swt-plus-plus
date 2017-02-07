@@ -8,3 +8,5 @@ include_directories("${PROJECT_INCLUDE_DIR}")
 
 add_executable(window window.cpp)
 target_link_libraries (window LINK_PUBLIC swt++)
+
+add_executable(win32 win32.cpp)

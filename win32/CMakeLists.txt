@@ -12,6 +12,7 @@ set(SWTPP_SRCS
     ${PROJECT_SOURCE_DIR}/Device.cpp
     ${PROJECT_SOURCE_DIR}/Display.cpp
     ${PROJECT_SOURCE_DIR}/Device.cpp
+    ${PROJECT_SOURCE_DIR}/Widget.cpp
     ${PROJECT_SOURCE_DIR}/Shell.cpp
 )
 
