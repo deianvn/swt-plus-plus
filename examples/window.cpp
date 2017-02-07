@@ -1,4 +1,6 @@
-#include <swt>
+#include <swt.hpp>
+
+using namespace swt;
 
 int main()
 {

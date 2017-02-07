@@ -1,0 +1,5 @@
+#include "swt/graphics/Device.hpp"
+#include "swt/graphics/Resource.hpp"
+#include "swt/widgets/Widget.hpp"
+#include "swt/widgets/Display.hpp"
+#include "swt/widgets/Shell.hpp"
