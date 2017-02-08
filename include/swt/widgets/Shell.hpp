@@ -2,15 +2,16 @@
 #define SWT_PLUS_PLUS_SHELL_HPP
 
 #include "Display.hpp"
-#include "Widget.hpp"
+#include "Canvas.hpp"
 
 namespace swt
 {
-    class Shell : public Widget
+    class Shell : public Canvas
     {
     public:
         Shell(Display* display);
-        Shell(Display* display, Widget* parent);
+        Shell(Shell* parent);
+        void setParent(Shell* parent);
         void show();
         void setVisible(bool visible);
         Display* getDisplay() const override;

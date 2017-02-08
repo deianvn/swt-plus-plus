@@ -1,0 +1,13 @@
+#ifndef SWT_PLUS_PLUS_RECTANGLE_HPP
+#define SWT_PLUS_PLUS_RECTANGLE_HPP
+
+namespace swt
+{
+    class Rectangle
+    {
+    public:
+        int x { 0 }, y { 0 }, width { 0 }, height { 0 };
+    };
+}
+
+#endif //SWT_PLUS_PLUS_RECTANGLE_HPP

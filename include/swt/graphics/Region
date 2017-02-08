@@ -1,0 +1,13 @@
+#ifndef SWT_PLUS_PLUS_REGION_HPP
+#define SWT_PLUS_PLUS_REGION_HPP
+
+namespace swt
+{
+    class Region : public Resource
+    {
+    public:
+        
+    };
+}
+
+#endif //SWT_PLUS_PLUS_REGION_HPP

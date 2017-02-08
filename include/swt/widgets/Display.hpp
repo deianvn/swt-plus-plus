@@ -8,11 +8,13 @@
 namespace swt
 {
     class Shell;
-    
+
+    using ShellsList = std::vector<Shell*>;
+
     class Display : public Device {
     public:
         int readAndDispatch();
-        const std::vector<Shell>& getShells();
+        const ShellsList& getShells();
         Shell* getCurrentShell();
     };
 }
